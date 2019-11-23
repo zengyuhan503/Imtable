@@ -1,0 +1,15 @@
+{
+  "deploy": {
+    "dev": {
+      "user": "ssnwt",
+      "host": "192.168.1.172",
+      "ref": "origin/mydev",
+      "repo": "git@github.com:zengyuhan503/WebCskyVrZyh.git",
+      "path": "/var/www/oms",
+      "post-deploy": "git pull origin mydev",
+      "env": {
+        "NODE_ENV": "development"
+      }
+    }
+  }
+}
